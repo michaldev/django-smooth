@@ -1,2 +1,3 @@
-include *.txt *.ini *.cfg *.rst
-recursive-include smooth *.ico *.png *.css *.gif *.jpg *.txt *.js *.html *.xml *.py
+include LICENSE
+include README.rst
+recursive-include smooth/static *
