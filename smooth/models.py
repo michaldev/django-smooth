@@ -31,12 +31,12 @@ class SmoothRemove(SmoothBaseActionType):
 
 class SmoothIncrement(SmoothBaseActionType):
     name = 'increment'
-    val: int
+    val: float
 
 
 class SmoothDecrement(SmoothBaseActionType):
     name = 'decrement'
-    val: int
+    val: float
 
 
 class SmoothSet(SmoothBaseActionType):

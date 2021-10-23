@@ -41,7 +41,7 @@ if request.is_ajax():
     response = SmoothResponse(
         actions=[
             SmoothAction(
-                action_type=SmoothIncrement(val=1),
+                action_type=SmoothIncrement(val=1.0),
                 elements=['cart-count']
             )
         ]
@@ -53,7 +53,7 @@ More example coming soon.
 
 
 ## Available actions
-- **SmoothIncrement** and **SmoothDecrement** - val (int) parameter as increment/decrement value.
+- **SmoothIncrement** and **SmoothDecrement** - val (float) parameter as increment/decrement value.
 - **SmoothRemove** - without parameters.
 - **SmoothAddClass** and **SmoothRemoveClass** - class_name (str) parameter as css class name.
 - **SmoothSet** and **SmoothAdd** - rendered_html (str) as replacement/added content. You have to add render method, or put complex html without django tags. Warning: Doesn't work with new forms after set yet.
