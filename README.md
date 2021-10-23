@@ -10,15 +10,26 @@ You can use dynamic forms as additional, and handle forms also traditionally. Th
 
 1. Install django-smooth and/or add to your requirements file.
 2. Add 'django-smooth' to installed_apps in settings.
+3. Add to end body:
+```
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+<script src="{% static 'smooth-core.js' %}"></script>
+```
 
 ## Usage
 
 Use case: **Cart incrementation.**
 
 To execute your form by smooth, add smooth="true" attribute in form. Like this:
+
 ```<form method="post" smooth="true">```
 
 Mark your html element for manipulating by views:
+
 ```<p smooth-id="cart-count">0</p>```
 
 In your view function or method of class add:
